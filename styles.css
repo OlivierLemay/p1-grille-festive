@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/**
+ * @author Prénom Nom courriel
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Menu
+ * Grille
+ * Mise en page
+ *** Contenus principal et complémentaire
+ *** Architecture des CSS (liste de définitions)
+ *** Pied de page
+ */
+
+/* Normalize
+   ========================================================================== */
+@import url(_normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(_utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(_typo.css);
+
+/* Menu
+   ========================================================================== */
+@import url(_menu.css);
+
+/* Grille
+   ========================================================================== */
+@import url(_grille.css);
+
+/* Mise en page
+   ========================================================================== */
+h1 {
+    color: #FFD38E;
+    text-align: right;
+}
+h2 {
+    color: #FFD38E;
+    text-align: right;
+}
+h3 {
+    border-bottom: solid 4px white;
+}
+body {
+    margin: 0 2.5rem;
+    background-color: #2B2B2B;
+    color: white;
+}
+.banniere {
+    padding-bottom: 3.5rem;
+}
+.intro {
+    background-color: #AA8F64;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.infos {
+    border-top: solid 4px #FFD38E;
+}
+.infos-article {
+}
+.infos-jeu {
+    text-align: right;
+    line-height: 3em;
+}
+.cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@media (min-width: 1000px) {
+    body {
+        margin: 0 10rem;
+    }
+    .banniere {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        margin: 0 15rem;
+    }
+    .intro {
+        padding: 6rem 5rem;
+    }
+    .infos {
+        display: flex;
+        justify-content: space-between;
+    }
+    .infos-article {
+        justify-content: start;
+    }
+    .infos-jeu {
+        justify-content: end;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas:
+                "a b b"
+                "c c c"
+                "d e e";
+    }
+
+
+    .card1 {
+        grid-area: a;
+    }
+
+    .card2 {
+        grid-area: b;
+    }
+
+    .card3 {
+        grid-area: c;
+    }
+
+    .card4 {
+        grid-area: d;
+    }
+
+    .card5 {
+        grid-area: e;
+    }
+}
