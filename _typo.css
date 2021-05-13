@@ -120,7 +120,7 @@ h2,
 
 h3,
 .h3 { /* = 18px */
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 @media (min-width: 600px) {
     h3,
@@ -172,4 +172,8 @@ h5,
 .caption {
     color: #FFD38E;
     font-weight: 700;
+}
+small {
+    font-family: 'Roboto';
+    font-size: 1.4rem;
 }
