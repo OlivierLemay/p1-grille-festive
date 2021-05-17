@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 /*** Classe conteneur pour le centrage et l'affichage de la grille en arrière-plan ***/
 @media (min-width: 600px) {
@@ -12,8 +19,14 @@
 
 /*** Conteneur flex utile autant pour l'écran étroit que l'écran large ***/
 .flxRow{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align:stretch;
+    -ms-flex-align:stretch;
     align-items:stretch; /* valeur par défaut */
 }
 
@@ -22,42 +35,59 @@
 
     /*** Classe de base pour l'intégration en flexbox ***/
     .rangee{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align:stretch;
+        -ms-flex-align:stretch;
         align-items:stretch; /* valeur par défaut */
     }
 
     .cols_1_de_12 {
+        -ms-flex-preferred-size: 6.5%;
         flex-basis: 6.5%;
     }
     .cols_2_de_12 {
+        -ms-flex-preferred-size: 15%;
         flex-basis: 15%;
     }
     .cols_3_de_12 {
+        -ms-flex-preferred-size: 23.5%;
         flex-basis: 23.5%;
     }
     .cols_4_de_12 {
+        -ms-flex-preferred-size: 32%;
         flex-basis: 32%;
     }
     .cols_5_de_12 {
+        -ms-flex-preferred-size: 40.5%;
         flex-basis: 40.5%;
     }
     .cols_6_de_12 {
+        -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     }
     .cols_7_de_12 {
+        -ms-flex-preferred-size: 57.5%;
         flex-basis: 57.5%;
     }
     .cols_8_de_12 {
+        -ms-flex-preferred-size: 66%;
         flex-basis: 66%;
     }
     .cols_9_de_12 {
+        -ms-flex-preferred-size: 74.5%;
         flex-basis: 74.5%;
     }
     .cols_10_de_12 {
+        -ms-flex-preferred-size: 83%;
         flex-basis: 83%;
     }
     .cols_11_de_12 {
+        -ms-flex-preferred-size: 91.5%;
         flex-basis: 91.5%;
     }
     /* La dernière classe est commenté car inutile...

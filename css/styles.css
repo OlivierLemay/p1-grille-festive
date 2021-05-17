@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 
 /**
@@ -127,6 +134,9 @@ footer {
         -ms-flex-pack: end;
         justify-content: end;
     }
+
+    /*Styles pour la disposition des sections de la grille*/
+
     .cards {
         display: -ms-grid;
         display: grid;
@@ -159,6 +169,31 @@ footer {
 
     .card5 {
         grid-area: e;
+    }
+}
+@media (min-width: 800px){
+    .card1 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .card2 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 3;
+    }
+    .card3 {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+    }
+    .card4 {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    .card5 {
+        -ms-grid-row: 5;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 3;
     }
 }
 @media (min-width: 800px){

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**
  * @author Prénom Nom courriel
 **/
@@ -116,10 +123,14 @@
     .js .nav__list {
         max-height: 100vh;
         overflow: hidden;
+        -webkit-transition: max-height 2s;
+        -o-transition: max-height 2s;
         transition: max-height 2s;
     }
     .js .nav--closed .nav__list {
         max-height: 0;
+        -webkit-transition: max-height 0.5s;
+        -o-transition: max-height 0.5s;
         transition: max-height 0.5s;
     }
 }
